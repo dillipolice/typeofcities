@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "sidebar content"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color:#a6d4ac;
+            padding: 1rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 1rem;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .sidebar ul li a:hover {
+            color: #007bff;
+        }
+
+        .content {
+            grid-area: content;
+            padding: 1rem;
+            background-color: #fff;
+            overflow-y: auto;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+@media (max-width: 500px) {
+            body {
+                grid-template-areas: 
+                    "header"
+                    "sidebar"
+                    "content"
+                    "footer";
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                height: auto;
+            }
+
+            .center {
+                width: 70%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Cities</h1>
+    </header>
+
+    <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">London</a></li>
+            <li><a href="Paris.html">Paris</a></li>
+            <li><a href="tokyo.html">Tokyo</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <h2>LONDON</h2>
+        <br>
+        <p>
+           <b> A </b>city overflowing with culture, history, entertainment and unforgettable cuisine, it’s hard to know where to start when making an itinerary for things to do in London. From iconic landmarks to quirky hidden gems, we’ve got all the best London experiences in one place. From some of the capital’s top restaurants to unforgettable London experience days out.
+        </p>
+        <br>
+        <p><b>L</b>ondon is the capital of the United Kingdom (UK), and its largest city. It is also the city with the highest population in the UK. The population is just under 9 million. The city is the largest in western Europe by population and area.
+        </p>
+        <br>
+        
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDfBY9lEFkLPs9ZzRhOzclpUYIk8qpj7VVBA&s" alt="Paris" class="center">
+    </main>
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
